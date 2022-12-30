@@ -64,3 +64,34 @@ img {
   max-width: 100%;
   display: block;
 }
+
+/* Utilidades */
+.text-center {
+  text-align: center;
+}
+
+/* HEADER */
+
+.header {
+}
+
+.header-content {
+}
+
+.header-image {
+}
+
+.header-text {
+}
+
+.product-tagline {
+}
+
+.product-name {
+}
+
+.product-description {
+}
+
+.product-price {
+}
