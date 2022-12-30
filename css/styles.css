@@ -1,0 +1,10 @@
+:root {
+  --mainfont: "Roboto", sans-serif;
+  --secondaryfont: "Lato", sans-serif;
+  --primarycolor: #1073ba;
+  --secondarycolor: #8f5500;
+  --gray: #3b3b3b;
+  --white: #ffff;
+  --black: #1f1e1e;
+  --lightgray: #e1e1e1;
+}
