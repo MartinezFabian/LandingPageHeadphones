@@ -16,20 +16,21 @@ html {
 /* Variables */
 
 :root {
-  --mainfont: "Roboto", sans-serif;
-  --secondaryfont: "Lato", sans-serif;
-  --primarycolor: #1073ba;
-  --secondarycolor: #8f5500;
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Lato", sans-serif;
+  --primary-color: #1073ba;
+  --secondary-color: #8f5500;
   --gray: #3b3b3b;
   --white: #ffff;
   --black: #1f1e1e;
   --lightgray: #e1e1e1;
+  --space: 5rem;
 }
 
 /* Estilos Globales */
 
 body {
-  font-family: var(--mainfont);
+  font-family: var(--main-font);
   font-size: 1.6rem;
   line-height: 1.5;
 }
@@ -44,8 +45,8 @@ h1,
 h2,
 h3 {
   font-weight: 900;
-  font-family: var(--secondaryfont);
-  margin: 2.5rem;
+  font-family: var(--secondary-font);
+  margin: calc(var(--space) / 2) 0;
 }
 
 h1 {
@@ -63,6 +64,7 @@ h3 {
 img {
   max-width: 100%;
   display: block;
+  height: auto;
 }
 
 /* Utilidades */
@@ -73,25 +75,64 @@ img {
 /* HEADER */
 
 .header {
+  background-color: var(--black);
+  padding: calc(var(--space) * 3) 0;
+  color: var(--white);
 }
 
-.header-content {
+@media (min-width: 768px) {
+  .header-content {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
 }
 
 .header-image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .header-text {
+  text-align: center;
+  padding-top: var(--space);
+}
+
+.header-text p {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .header-text {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+  }
 }
 
 .product-tagline {
+  font-size: 3rem;
+  font-weight: 900;
 }
 
 .product-name {
+  font-size: 5.5rem;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .product-name {
+    font-size: 6rem;
+    line-height: 1;
+  }
 }
 
 .product-description {
 }
 
-.product-price {
+.product-price span {
+  font-size: 4rem;
+  font-weight: 900;
 }
