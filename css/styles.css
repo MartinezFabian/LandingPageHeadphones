@@ -187,7 +187,76 @@ img {
 /* ABOUT SECTION */
 
 .about {
+  background-image: linear-gradient(to top, var(--black) 50%, transparent 100%),
+    url(/img/imagen-mujer.jpg);
+  background-position: right;
+  background-repeat: repeat, no-repeat;
+  background-size: 100%, 110rem;
+}
+
+@media (min-width: 1600px) {
+  .about {
+    background-size: 100%, 210rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .about {
+    background-image: linear-gradient(
+        to right,
+        var(--black) 50%,
+        transparent 100%
+      ),
+      url(/img/imagen-mujer.jpg);
+  }
 }
 
 .about-grid {
+  display: grid;
+  grid-template-rows: 40rem 40rem;
+  row-gap: var(--space);
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    row-gap: unset;
+    column-gap: var(--space);
+    padding: calc(var(--space) * 2) 0;
+  }
+}
+
+.about-text {
+  color: var(--white);
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding-bottom: var(--space);
+}
+
+.about-text h2 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.about-text p {
+  font-size: 1.8rem;
+  line-height: 2;
+}
+
+@media (min-width: 768px) {
+  .about-text h2 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .about-text p {
+    font-size: 2rem;
+    line-height: 2;
+  }
+
+  .about-text {
+    padding-bottom: 0;
+  }
 }
