@@ -188,7 +188,7 @@ img {
 
 .about {
   background-image: linear-gradient(to top, var(--black) 50%, transparent 100%),
-    url(/img/imagen-mujer.jpg);
+    url(../img/imagen-mujer.jpg);
   background-position: right;
   background-repeat: repeat, no-repeat;
   background-size: 100%, 110rem;
@@ -207,7 +207,7 @@ img {
         var(--black) 50%,
         transparent 100%
       ),
-      url(/img/imagen-mujer.jpg);
+      url(../img/imagen-mujer.jpg);
   }
 }
 
@@ -337,17 +337,17 @@ img {
 }
 
 .model-basic {
-  background-image: url(/img/modelo-x.svg);
+  background-image: url(../img/modelo-x.svg);
 }
 
 .model-plus {
-  background-image: url(/img/modelo-y.svg);
+  background-image: url(../img/modelo-y.svg);
 }
 
 .model-plus-plus {
   background-color: var(--primary-color);
   color: var(--white);
-  background-image: url(/img/modelo-z.svg);
+  background-image: url(../img/modelo-z.svg);
 }
 
 .model-plus-plus .price {
@@ -369,7 +369,7 @@ img {
 /* NEWSLETTER SECTION */
 .newsletter {
   background-image: linear-gradient(to bottom, transparent 50%, var(--black) 0%),
-    url(/img/newsletter.jpg);
+    url(../img/newsletter.jpg);
   background-repeat: repeat, no-repeat;
   background-size: 100%, 80rem;
   background-position: top center;
@@ -383,7 +383,7 @@ img {
         transparent 50%,
         var(--black) 0%
       ),
-      url(/img/newsletter.jpg);
+      url(../img/newsletter.jpg);
     background-size: 100%, 90rem;
     background-position: left;
     padding: 10rem 0;
