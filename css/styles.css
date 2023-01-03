@@ -299,6 +299,20 @@ img {
   background-repeat: no-repeat;
   background-position: 90% center;
   background-size: 12rem;
+  transition-property: transform, backgroud-size;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+}
+
+.model:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 992px) {
+  .model:hover {
+    background-size: 22rem;
+    cursor: pointer;
+  }
 }
 
 @media (min-width: 992px) {
